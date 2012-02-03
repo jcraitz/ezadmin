@@ -1,0 +1,439 @@
+@CHARSET "UTF-8";
+
+body {
+  padding:0;
+  margin:0;
+  background-color:#212121;
+  color:#fff;
+  background-image:url(../images/main_back.jpg);
+  background-attachment:fixed;
+  background-position:top;
+  background-repeat:repeat-x;
+}
+.floatClear {
+  display:block;
+  clear:both;
+}
+.label {
+  position: absolute;
+  top: -999px;
+  left: -999px;
+}
+.rightMargin {
+  margin-right:5em;
+}
+.main {
+  clear:both;
+  width:100%;
+  padding-top:1em;
+}
+.outer {
+  padding:40px;
+}
+.application {
+  background-color:#e5e5e5;
+  color:#000;
+  border:1px solid #666;
+  background-image:url(../images/app_back.jpg);
+  background-position:top;
+  background-attachment:fixed;
+  background-repeat:repeat-x;
+}
+
+.header {
+  background-color:/*#dfd8ba*/#fff895;
+  float:left;width:100%;
+  background-image:url(../images/ezproxy_header_back_alt.jpg);
+  background-position:top;
+  background-repeat:repeat-x;
+  border-bottom: 1px solid #ebe488;
+}
+.header p {
+  margin:0; 
+  display:block; 
+  width: 15em;
+  float:left;
+}
+.header ul {
+  list-style:none; 
+  padding:0; 
+  margin:0; 
+  display:block; 
+  width: 40em;
+  float:right;
+}
+.header li {
+  padding:0; 
+  margin:0; 
+  display:block; 
+  float:left;
+  width:23%;
+  background-color:#fff;
+}
+.header li.wide {
+  width:31%;
+}
+.header li.current {
+  background-color:transparent;
+}
+
+.header li a {
+  padding: 0.25em 0 0.5em 0;
+  display:block; 
+  width:100%;
+  text-align:center;
+  color:#000;
+  text-decoration:none;
+  font-family: verdana, arial, sans-serif;
+  border-left:2px solid #ccc;
+}
+.header li a:hover, .header li a:focus {
+  text-decoration:underline;
+}
+	
+.header .logo {
+  margin: 20px 0 20px 20px;
+  display:block; 
+  width:350px;
+  height:80px;
+  background-image:url(../images/ez_admin_logo.gif);b
+  ackground-position:top left;
+  background-repeat:no-repeat;
+}
+
+.message {
+  background-color:#93eebf;
+  width:33%;
+  margin-right:auto;
+  margin-left:auto;
+  padding:1em;
+  clear:both;
+  background-image:url(../images/message_slick_back.jpg);
+  background-position:top;background-repeat:repeat-x;
+}
+
+.message .yesButton, .message .noButton{
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  display:block;
+  width:20%;
+  border:1px solid #ccc;
+  background-color:#eee;
+  color:#000; 
+  text-align:center;
+}
+.message .yesButton {
+  float:right;
+}
+.message .noButton{
+  float:left;
+}
+.message .yesButton:hover, 
+.message .noButton:hover, 
+.message .yesButton:focus,
+.message .noButton:focus{
+  background-color:#fff;border:1px solid #aaa;
+}
+
+.resourceList, .resourceForm {
+  background-color:#fff;
+  width:80%;
+  border:2px solid #ccc;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-top-left-radius: 12px;
+  -webkit-border-top-right-radius: 12px;
+  -webkit-border-bottom-left-radius: 12px;
+  -webkit-border-bottom-right-radius: 12px;
+  margin:0 auto 1em auto;
+  padding: 0 10px;
+  clear:both;
+}
+
+.hotlinks {
+  margin-top:.5em;
+}
+
+.hotlinks a {
+  font-size:1em;display:block; 
+  float:left; 
+  clear:none; 
+  margin-left:0.25em; 
+  margin-bottom:0.25em;
+  padding:0 0.4em 0 0.4em; 
+  border:1px solid #ddd; 
+  text-decoration:none;
+  color:#000;
+}
+
+.hotlinks a:hover, .hotlinks a:focus {
+  text-decoration:underline; 
+  background-color:#eee;
+}
+
+.resourceHeader {
+  border:2px solid #ddd; 
+  width:1.5em;
+  text-align:center;
+  font-size:2em;
+  padding-left:0.2em;
+  font-weight:bold;
+  display:block;
+  float:left;
+  clear:left;
+  border-bottom:0;
+  background-color:#eee;
+}
+
+.resourceHeader a {
+  font-size:0.5em; 
+  color:#999;
+  text-decoration:none;
+  vertical-align:super;
+}
+.resourceHeader a:hover, .resourceHeader a:focus {
+  text-decoration:underline;
+}
+
+.resource {
+  padding: 0.5em 0 0.5em 0;
+  float:left; 
+  width:100%;
+}
+.resource + .resource, .resourceHeader + .resource {
+  border-top:1px solid #ddd;
+  padding-top:1em;
+}
+.resource .title {
+  display:block;
+  float:left; 
+  clear:both; 
+  width:75%;
+}
+.resource .deleteLink {
+  display:block;
+  float:right; 
+  width:24%;
+}
+
+.resourceType {
+  display:block; 
+  float:left; 
+  clear:left; 
+  width:25%;
+  margin-top:0.5em;
+}
+.resourceType .padding {
+  padding-left:32px;
+}
+.configBlock {
+  display:block; 
+  float:left; 
+  width:64%; 
+  padding:0; 
+  margin:0.5em 0 0 0;
+}
+.configBlock li {
+  display:block;
+  float:left;
+  width:100%;
+  clear:left;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.configBlock li.odd {
+  background-color:#eee;
+}
+
+.customConfig {
+  background-image:url(../images/quote_back.jpg);
+  background-position:bottom;
+  background-repeat:repeat-x;
+}
+.customConfigOuter {
+  padding:16px 0 0 20px;
+  background-image:url(../images/start_quote.gif);
+  background-position:top left;
+  background-repeat:no-repeat;
+}
+.customConfigInner {
+  white-space:pre-wrap;
+  padding:0 20px 16px 0;
+  background-image:url(../images/end_quote.gif);
+  background-position:bottom right;
+  background-repeat:no-repeat;
+}
+
+.resource > .configType {
+  display:block; 
+  float:left; 
+  width:10%; 
+  margin-top:0.5em;
+}
+
+.footer {
+  float:left;
+  clear:both;
+  width:100%;
+  padding:1em 0 1em 0;
+}
+.footer ul {
+  list-style:none; 
+  padding:0; 
+  margin:0; 
+  float:left; 
+  display:block; 
+  width:100%;
+  text-align:center;
+}
+.footer li {
+  padding:0; 
+  margin:0; 
+  display:block; 
+  width:25%;
+  float:left; 
+  text-align:center;
+}
+.footer a {
+  color:#fff;
+  font-family: verdana, arial, sans-serif;
+  font-size:0.8em;
+}
+
+.configBlock ul {
+  margin-bottom:0; 
+  padding-bottom:0;
+}
+.customConfigInner {
+  whitespace:pre;
+}
+
+.resource .title a {
+  display:block; 
+  padding-left: 32px; 
+  min-height: 32px;
+  background-image:url(../images/edit.gif);
+  background-position:top left;
+  background-repeat:no-repeat;
+}
+
+.resource .title a {
+  display:block; 
+  padding-left: 32px; 
+  min-height: 32px;
+  background-image:url(../images/edit.gif);
+  background-position:top left;
+  background-repeat:no-repeat;
+  font-size: 1.25em; 
+  color:#000; 
+  font-weight:bold;
+}
+
+.resource .deleteLink a {
+  display:block; 
+  width: 32px; 
+  height: 32px; 
+  float:right;
+  background-image:url(../images/delete.gif);
+  background-position:top right;
+  background-repeat:no-repeat;
+}
+
+.resource .restricted {
+  display:inline-block; 
+  clear:none;width: 16px; 
+  height: 16px; 
+  background-image:url(../images/lock.png);
+  background-position:top right;
+  background-repeat:no-repeat;
+}
+
+label {
+  display:block;
+  width: 8em;
+  float:left;
+  clear:both;
+  margin-bottom: 1em;
+}
+input, select, textarea {
+  float: left;
+  clear: none;
+}
+
+#configSection{
+  float: left;
+  clear: both;
+  width:100%;
+}
+
+#configBody {
+  padding: 0 5em 0 5em;
+}
+
+.urlConfigBlock, #configCustom {
+  float:left;
+  width:100%;
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  padding: 1em 0 0.5em 0;
+}
+
+.urlConfigBlock + .urlConfigBlock {
+  border-top: none;
+}	
+
+form {
+  margin:1em 0 0 0.5em;
+}
+
+.formSectionHeader{
+  float:left;
+  display:block;
+  width:15em;
+}
+
+#addUrl, #toggleConfig, .deleteUrlButton{
+  display:block; 
+  float:left; 
+  padding-left:32px; 
+  height:32px; 
+  color:#000; 
+  text-decoration:none;
+}
+
+#addUrl:hover, #addUrl:focus, 
+#toggleConfig:hover, #toggleConfig:focus
+.deleteUrlButton:hover, .deleteUrlButton:focus {
+  text-decoration:underline;
+}
+
+#addUrl { 
+  margin-right:2em;
+  background-image:url(../images/add.gif);
+  background-position:top left;
+  background-repeat:no-repeat;
+}
+.deleteUrlButton { 
+  margin-right:2em;
+  float: right;
+  background-image:url(../images/delete.gif);
+  background-position:top left;
+  background-repeat:no-repeat;
+}
+.deleteUrlButton + label {
+  clear:left;
+}
+
+#toggleConfig{
+  background-image:url(../images/toggle1.gif);
+  background-position:top left;
+  background-repeat:no-repeat;
+}
+#toggleConfig.urlOption{
+  background-image:url(../images/toggle2.gif);
+  background-position:top left;
+  background-repeat:no-repeat;
+}
